@@ -12,6 +12,7 @@
   --gray-color-3: #333333;
   --gray-color-4: #828282;
   --gray-color-5: #bdbdbd;
+  --gray-color-6: #c4c4c4;
 
   --primary-color: #f2994a;
 
@@ -24,4 +25,268 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 0 24rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-color-4);
+}
+
+.header {
+  padding: 5rem 0;
+}
+
+.heading-primary {
+  font-family: "Playfair Display", serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: var(--gray-color-1);
+  margin-bottom: 1.2rem;
+}
+
+.sub-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.dots-img {
+  height: max-content;
+}
+
+.heading-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--gray-color-2);
+  padding-right: 50rem;
+}
+
+.recipe-img {
+  width: 100%;
+  margin-bottom: 4.8rem;
+}
+
+.ingredients-box,
+.instructions-box {
+  padding-right: 50rem;
+}
+
+.heading-secondary {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.33;
+  margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.33;
+  margin-bottom: 3.2rem;
+}
+
+.main {
+  position: relative;
+  margin-bottom: 18rem;
+}
+
+.ingredient-box {
+  margin-bottom: 3.8rem;
+}
+
+.ingredinent-item,
+.instruction-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.ingredinent-checkbox {
+  display: inline-block;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--gray-color-4);
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.ingredinent-text,
+.instruction-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 90%;
+}
+.ingredinent-text {
+  line-height: 1.65;
+}
+.instruction-text {
+  line-height: 1.25;
+}
+
+.ingredinent-text span,
+.instruction-text span {
+  font-weight: 700;
+}
+
+.instruction-checkbox {
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: var(--white-color);
+  text-align: center;
+  align-self: flex-start;
+}
+
+.total-mess-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5.7rem 5.7rem 4.4rem 5.7rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.total-mess {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4.4rem;
+}
+
+.material-symbols-outlined {
+  font-size: 2.4rem;
+}
+
+.mess-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--gray-color-5);
+  margin-bottom: 0.4rem;
+}
+.mess-detail {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.mess-orange {
+  color: var(--primary-color);
+}
+
+.footer {
+  height: 5.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--gray-color-3);
+}
+
+@media (max-width: 23.44em) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .header {
+    padding: 5rem 0 2rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .heading-sub {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding-right: 0;
+  }
+
+  .recipe-img {
+    margin-bottom: 2.4rem;
+  }
+
+  .ingredients-box,
+  .instructions-box {
+    padding-right: 0rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .total-mess-box {
+    position: relative;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .total-mess {
+    display: flex;
+    gap: 0rem;
+    margin-bottom: 0rem;
+    gap: 1rem;
+  }
+  .total-mess:nth-child(1) {
+    grid-column: 1/-1;
+  }
+
+  .material-symbols-outlined {
+    font-size: 2rem;
+  }
+
+  .mess-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .mess-detail {
+    font-size: 1rem;
+  }
+
+  .ingredinent-text {
+    font-size: 1.4rem;
+  }
+  .instruction-text {
+    font-size: 1.6rem;
+  }
 }
